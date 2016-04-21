@@ -8,13 +8,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
+import android.support.v7.app.AppCompatActivity;
 /**
- * Created by john on 2016/3/23.
+ * Created by john on 2016/4/21.
  */
-public class TwoActivity extends Activity {
-    private EditText et1;
-    private EditText et2;
+public class TwoActivity extends Activity{
     private Button but;//创建一个按钮对象，导入包
 
     @Override
@@ -56,4 +54,5 @@ public class TwoActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

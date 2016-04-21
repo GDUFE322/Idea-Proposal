@@ -7,20 +7,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by john on 2016/4/14.
+ * Created by john on 2016/4/21.
  */
 public class Fragmentdownload extends android.support.v4.app.Fragment {
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
-        super.onCreate(savedInstanceState);
-    }
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            // TODO Auto-generated method stub
+            super.onCreate(savedInstanceState);
+        }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater,
-                             @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
-        return inflater.inflate(R.layout.download, null);
-    }
-
+        @Override
+        public View onCreateView(LayoutInflater inflater,
+                @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+            // TODO Auto-generated method stub
+            return inflater.inflate(R.layout.download, null);
+        }
 }

@@ -1,54 +1,39 @@
 package com.gdufe322.studyassistant;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.app.Activity;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
-
-    private Button siu;//创建一个按钮对象，导入包
-    private Button sii;
+/**
+ * Created by john on 2016/4/21.
+ */
+public class ApplyActivity extends Activity{
+    private Button but;//创建一个按钮对象，导入包
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.apply_activity);
 
-
-        siu = (Button) findViewById(R.id.button);//sign up button
-        sii = (Button) findViewById(R.id.button2);//sign in button
-
-        siu.setOnClickListener(new View.OnClickListener() {
+        but = (Button) findViewById(R.id.button9);
+        but.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-                Intent in = new Intent(MainActivity.this, TwoActivity.class);
+                Intent in = new Intent(ApplyActivity.this, forActivity.class);
                 startActivity(in);
             }
 
         });
-        sii.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View arg0) {
-
-                Intent in2 = new Intent(MainActivity.this, ThiActivity.class);//创建意图对象
-                startActivity(in2);//=MainActivity.this.startActivity(in2)
-
-            }
-
-        });
 
 
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

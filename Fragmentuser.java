@@ -1,13 +1,13 @@
 package com.gdufe322.studyassistant;
 
-import android.support.annotation.Nullable;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by john on 2016/4/14.
+ * Created by john on 2016/4/21.
  */
 public class Fragmentuser extends android.support.v4.app.Fragment {
 
@@ -23,5 +23,4 @@ public class Fragmentuser extends android.support.v4.app.Fragment {
         // TODO Auto-generated method stub
         return inflater.inflate(R.layout.user, null);
     }
-
 }

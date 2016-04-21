@@ -1,18 +1,33 @@
 package com.gdufe322.studyassistant;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 /**
- * Created by john on 2016/3/24.
+ * Created by john on 2016/4/21.
  */
 public class ThiActivity extends Activity{
+    private Button but2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.thi_activity);
+
+        but2 = (Button) findViewById(R.id.button5);
+        but2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Intent in = new Intent(ThiActivity.this, forActivity.class);
+                startActivity(in);
+            }
+
+        });
 
     }
 
@@ -37,4 +52,5 @@ public class ThiActivity extends Activity{
 
         return super.onOptionsItemSelected(item);
     }
+
 }

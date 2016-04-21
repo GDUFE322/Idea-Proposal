@@ -1,25 +1,30 @@
 package com.gdufe322.studyassistant;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.RadioButton;
+import android.widget.Button;
 import android.widget.RadioGroup;
 
-import java.lang.reflect.AccessibleObject;
+
 
 /**
- * Created by john on 2016/3/24.
+ * Created by john on 2016/4/21.
  */
+
 public class forActivity extends FragmentActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.for_men_activity);
+        initView();
+
+
 
     }
 
@@ -89,5 +94,5 @@ public class forActivity extends FragmentActivity{
 
             }
         });
-     };
+    };
 }

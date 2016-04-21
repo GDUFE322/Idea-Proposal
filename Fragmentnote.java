@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by john on 2016/4/14.
+ * Created by john on 2016/4/21.
  */
 public class Fragmentnote extends android.support.v4.app.Fragment{
     @Override
